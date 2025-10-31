@@ -1,0 +1,25 @@
+1. Identify and Provide the PEAS description and TASK Environment for a given AI problem.
+(Self-Driving Car)
+
+PEAS:
+- Performance measure: avoid collisions, obey traffic laws, passenger comfort, timely arrival, fuel/energy efficiency, passenger satisfaction.
+- Environment (sensors): cameras, LiDAR, radar, GPS, IMU, ultrasonic sensors, maps, V2X messages.
+- Actuators: steering, throttle, brakes, indicators, lights, horn, gear control, communication outputs.
+- Sensors/Actuators summary: perceive lanes, vehicles, pedestrians, signs; control motion and signals.
+
+Task Environment:
+- Observable: partially (sensors noisy, occlusions).
+- Stochastic and dynamic: other agents and weather affect outcomes.
+- Continuous state and action spaces.
+- Sequential and real-time with safety-critical constraints.
+- Single-agent controller operating in a multi-agent traffic environment.
+
+theory :-
+- Pipeline: perception (object detection, segmentation), localization (GPS+SLAM), prediction (other agents), planning (behavior + trajectory planning), control (trajectory tracking).
+- Uses sensor fusion, machine learning (deep nets for perception), probabilistic estimation, path-planning algorithms, and feedback control.
+
+advantages:-
+- Potentially fewer accidents, increased mobility/accessibility, reduced congestion and energy use, lower human driver burden.
+
+Applications:-
+- Autonomous taxis and ride-hailing, last-mile delivery, freight transport, driver-assist systems, accessible transport for disabled/elderly.
